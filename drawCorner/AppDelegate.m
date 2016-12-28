@@ -7,19 +7,32 @@
 //
 
 #import "AppDelegate.h"
+#import "FpsViewController.h"
 
 @interface AppDelegate ()
 
+@property (nonatomic, strong) UIWindow *alertWindow;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [self addFpsWindow];
     return YES;
 }
-
+- (void)addFpsWindow{
+    
+    _alertWindow = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, self.window.bounds.size.width, 20)];
+    _alertWindow.backgroundColor = [UIColor redColor];
+    _alertWindow.windowLevel = UIWindowLevelAlert;
+    
+    FpsViewController *fpsVc = [[FpsViewController alloc] init];
+    _alertWindow.rootViewController = fpsVc;
+    
+    [_alertWindow makeKeyAndVisible];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

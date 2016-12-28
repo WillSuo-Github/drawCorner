@@ -13,6 +13,9 @@
 		54F51B3D1E0FAEAA00261920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F51B3B1E0FAEAA00261920 /* Main.storyboard */; };
 		54F51B3F1E0FAEAA00261920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F51B3E1E0FAEAA00261920 /* Assets.xcassets */; };
 		54F51B421E0FAEAA00261920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F51B401E0FAEAA00261920 /* LaunchScreen.storyboard */; };
+		54F51B4B1E0FAED400261920 /* UIView+WS.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F51B4A1E0FAED400261920 /* UIView+WS.m */; };
+		54F51B4E1E0FC4EA00261920 /* WSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F51B4D1E0FC4EA00261920 /* WSCollectionViewCell.m */; };
+		54F51B511E0FC5E500261920 /* FpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F51B501E0FC5E500261920 /* FpsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		54F51B3E1E0FAEAA00261920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54F51B411E0FAEAA00261920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54F51B431E0FAEAA00261920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54F51B491E0FAED400261920 /* UIView+WS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WS.h"; sourceTree = "<group>"; };
+		54F51B4A1E0FAED400261920 /* UIView+WS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WS.m"; sourceTree = "<group>"; };
+		54F51B4C1E0FC4EA00261920 /* WSCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCollectionViewCell.h; sourceTree = "<group>"; };
+		54F51B4D1E0FC4EA00261920 /* WSCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCollectionViewCell.m; sourceTree = "<group>"; };
+		54F51B4F1E0FC5E500261920 /* FpsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FpsViewController.h; sourceTree = "<group>"; };
+		54F51B501E0FC5E500261920 /* FpsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FpsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,10 @@
 		54F51B261E0FAEAA00261920 = {
 			isa = PBXGroup;
 			children = (
+				54F51B491E0FAED400261920 /* UIView+WS.h */,
+				54F51B4A1E0FAED400261920 /* UIView+WS.m */,
+				54F51B4F1E0FC5E500261920 /* FpsViewController.h */,
+				54F51B501E0FC5E500261920 /* FpsViewController.m */,
 				54F51B311E0FAEAA00261920 /* drawCorner */,
 				54F51B301E0FAEAA00261920 /* Products */,
 			);
@@ -67,6 +80,8 @@
 				54F51B401E0FAEAA00261920 /* LaunchScreen.storyboard */,
 				54F51B431E0FAEAA00261920 /* Info.plist */,
 				54F51B321E0FAEAA00261920 /* Supporting Files */,
+				54F51B4C1E0FC4EA00261920 /* WSCollectionViewCell.h */,
+				54F51B4D1E0FC4EA00261920 /* WSCollectionViewCell.m */,
 			);
 			path = drawCorner;
 			sourceTree = "<group>";
@@ -110,6 +125,7 @@
 				TargetAttributes = {
 					54F51B2E1E0FAEAA00261920 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NT9VR9C9HY;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,8 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F51B4E1E0FC4EA00261920 /* WSCollectionViewCell.m in Sources */,
+				54F51B4B1E0FAED400261920 /* UIView+WS.m in Sources */,
 				54F51B3A1E0FAEAA00261920 /* ViewController.m in Sources */,
 				54F51B371E0FAEAA00261920 /* AppDelegate.m in Sources */,
+				54F51B511E0FC5E500261920 /* FpsViewController.m in Sources */,
 				54F51B341E0FAEAA00261920 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NT9VR9C9HY;
 				INFOPLIST_FILE = drawCorner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WS.drawCorner;
@@ -283,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NT9VR9C9HY;
 				INFOPLIST_FILE = drawCorner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WS.drawCorner;
