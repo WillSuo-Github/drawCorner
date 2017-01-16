@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5469EE401E2CBD5C001134EF /* UIView+EXTENSION.m in Sources */ = {isa = PBXBuildFile; fileRef = 5469EE3F1E2CBD5C001134EF /* UIView+EXTENSION.m */; };
 		54F51B341E0FAEAA00261920 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F51B331E0FAEAA00261920 /* main.m */; };
 		54F51B371E0FAEAA00261920 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F51B361E0FAEAA00261920 /* AppDelegate.m */; };
 		54F51B3A1E0FAEAA00261920 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F51B391E0FAEAA00261920 /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5469EE3E1E2CBD5C001134EF /* UIView+EXTENSION.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EXTENSION.h"; sourceTree = "<group>"; };
+		5469EE3F1E2CBD5C001134EF /* UIView+EXTENSION.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EXTENSION.m"; sourceTree = "<group>"; };
 		54F51B2F1E0FAEAA00261920 /* drawCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drawCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F51B331E0FAEAA00261920 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54F51B351E0FAEAA00261920 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,8 @@
 		54F51B261E0FAEAA00261920 = {
 			isa = PBXGroup;
 			children = (
+				5469EE3E1E2CBD5C001134EF /* UIView+EXTENSION.h */,
+				5469EE3F1E2CBD5C001134EF /* UIView+EXTENSION.m */,
 				54F51B491E0FAED400261920 /* UIView+WS.h */,
 				54F51B4A1E0FAED400261920 /* UIView+WS.m */,
 				54F51B4F1E0FC5E500261920 /* FpsViewController.h */,
@@ -170,6 +175,7 @@
 				54F51B4B1E0FAED400261920 /* UIView+WS.m in Sources */,
 				54F51B3A1E0FAEAA00261920 /* ViewController.m in Sources */,
 				54F51B371E0FAEAA00261920 /* AppDelegate.m in Sources */,
+				5469EE401E2CBD5C001134EF /* UIView+EXTENSION.m in Sources */,
 				54F51B511E0FC5E500261920 /* FpsViewController.m in Sources */,
 				54F51B341E0FAEAA00261920 /* main.m in Sources */,
 			);
@@ -330,6 +336,7 @@
 				54F51B481E0FAEAA00261920 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

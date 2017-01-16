@@ -8,6 +8,7 @@
 
 #import "WSCollectionViewCell.h"
 #import "UIView+WS.h"
+#import "UIView+EXTENSION.h"
 
 @implementation WSCollectionViewCell
 
@@ -32,11 +33,16 @@
         x = i % col * width;
         y = i / col * height;
         UIImageView *cornerView = [[UIImageView alloc] initWithFrame:CGRectMake(x, y, width, height)];
-        cornerView.layer.borderColor = [UIColor greenColor].CGColor;
-        cornerView.layer.borderWidth = 1;
-        cornerView.layer.cornerRadius = width / 2;
-        cornerView.layer.masksToBounds = true;
+//        cornerView.layer.borderColor = [UIColor greenColor].CGColor;
+//        cornerView.layer.borderWidth = 1;
+//        cornerView.layer.cornerRadius = width / 2;
+//        cornerView.layer.masksToBounds = true;
+        
 //        [cornerView addCorner:width / 2];
+        
+        [cornerView roundWithSide:BBTSideTopLeft | BBTSideBottomLeft | BBTSideBottomRight | BBTSideTopRight spacing:width / 2];
+        
+        
         cornerView.backgroundColor = [UIColor redColor];
         [self.contentView addSubview:cornerView];
     }

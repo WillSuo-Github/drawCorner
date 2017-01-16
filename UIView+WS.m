@@ -35,6 +35,8 @@
     CGContextDrawPath(context, kCGPathFillStroke);
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
+    CGContextRelease(context);
+    
     return image;
 }
 @end
