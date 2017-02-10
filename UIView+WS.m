@@ -30,12 +30,13 @@
     CGContextSetStrokeColorWithColor(context, borderColor.CGColor);
     CGContextSetFillColorWithColor(context, bgColor.CGColor);
     
+    CGContextClip(context);
+    [[UIImage imageNamed:@"lena"] drawInRect:CGRectMake(0, 0, width, height)];
     
     CGContextClosePath(context);
     CGContextDrawPath(context, kCGPathFillStroke);
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    CGContextRelease(context);
     
     return image;
 }

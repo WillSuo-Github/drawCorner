@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541645D21E4D58750047229D /* lena.png in Resources */ = {isa = PBXBuildFile; fileRef = 541645D11E4D58750047229D /* lena.png */; };
 		5469EE401E2CBD5C001134EF /* UIView+EXTENSION.m in Sources */ = {isa = PBXBuildFile; fileRef = 5469EE3F1E2CBD5C001134EF /* UIView+EXTENSION.m */; };
 		54F51B341E0FAEAA00261920 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F51B331E0FAEAA00261920 /* main.m */; };
 		54F51B371E0FAEAA00261920 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F51B361E0FAEAA00261920 /* AppDelegate.m */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		541645D11E4D58750047229D /* lena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lena.png; sourceTree = "<group>"; };
 		5469EE3E1E2CBD5C001134EF /* UIView+EXTENSION.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EXTENSION.h"; sourceTree = "<group>"; };
 		5469EE3F1E2CBD5C001134EF /* UIView+EXTENSION.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EXTENSION.m"; sourceTree = "<group>"; };
 		54F51B2F1E0FAEAA00261920 /* drawCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drawCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 		54F51B311E0FAEAA00261920 /* drawCorner */ = {
 			isa = PBXGroup;
 			children = (
+				541645D11E4D58750047229D /* lena.png */,
 				54F51B351E0FAEAA00261920 /* AppDelegate.h */,
 				54F51B361E0FAEAA00261920 /* AppDelegate.m */,
 				54F51B381E0FAEAA00261920 /* ViewController.h */,
@@ -161,6 +164,7 @@
 				54F51B421E0FAEAA00261920 /* LaunchScreen.storyboard in Resources */,
 				54F51B3F1E0FAEAA00261920 /* Assets.xcassets in Resources */,
 				54F51B3D1E0FAEAA00261920 /* Main.storyboard in Resources */,
+				541645D21E4D58750047229D /* lena.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +304,7 @@
 				DEVELOPMENT_TEAM = NT9VR9C9HY;
 				INFOPLIST_FILE = drawCorner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = WS.drawCorner;
+				PRODUCT_BUNDLE_IDENTIFIER = WS.test.123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -312,7 +316,7 @@
 				DEVELOPMENT_TEAM = NT9VR9C9HY;
 				INFOPLIST_FILE = drawCorner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = WS.drawCorner;
+				PRODUCT_BUNDLE_IDENTIFIER = WS.test.123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
